@@ -16,6 +16,9 @@ setup(
     description='Social media feed plugin for Django CMS',
     install_requires=[
         'django-cms>=3.2,<3.4',
+        'facebook-sdk>=2.0,<3.0',
+        'python-dateutil>=2.1',
+        'twython>=3.4,<4.0',
     ],
     url='https://github.com/andersinno/cmsplugin-feed-ai',
 )

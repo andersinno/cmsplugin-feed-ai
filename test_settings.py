@@ -34,7 +34,7 @@ INSTALLED_APPS = [
 ]
 
 LANGUAGES = [
-    ("en-us", "English"),
+    ('en-us', 'English'),
 ]
 
 
