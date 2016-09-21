@@ -8,7 +8,7 @@ setup(
     author_email='info@anders.fi',
     packages=find_packages(
         exclude=[
-            "tests",
+            "test*",
         ]
     ),
     include_package_data=True,
