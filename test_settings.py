@@ -1,6 +1,19 @@
+# -*- coding: utf-8 -*-
 DEBUG = True
-SECRET_KEY = 'x'
-SITE_ID = 1
+SECRET_KEY = 'really_secret'
+
+AI_FEED_SETTINGS = {
+    'cache_time': 3600,
+    'facebook': {
+        'profile_name': 'facebookprofile',
+        'auth_token': 'facebook_auth_token_value',
+    },
+    'twitter': {
+        'profile_name': 'twitterprofile',
+        'app_key': 'twitter_app_key_value',
+        'access_token': 'twitter_auth_token_value',
+    },
+}
 
 DATABASES = {
     'default': {
@@ -24,10 +37,6 @@ LANGUAGES = [
     ('en-us', 'English'),
 ]
 
-MIDDLEWARE_CLASSES = [
-    'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.contrib.auth.middleware.AuthenticationMiddleware',
-]
 
 TEMPLATES = [
     {
@@ -42,3 +51,6 @@ TEMPLATES = [
         },
     },
 ]
+
+SITE_ID = 1
+WSGI_APPLICATION = 'test_wsgi.application'
